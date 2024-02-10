@@ -206,9 +206,9 @@ echo '</div>';
 
 		
 		if($agent_id == $username || "Admin" == $username){
-			echo "<td>"."<a href='editNominee.php?claim_id=".$row["claim_id"]. "'>Edit</a>"."</td>\n";
+			echo "<td>"."<a href='editClaims.php?claim_id=".$row["claim_id"]. "'>Edit</a>"."</td>\n";
 		}else {
-			echo "<td>"."<a class=\"dis\" href='editNominee.php?claim_id=".$row["claim_id"]. "'>Edit</a>"."</td>\n";
+			echo "<td>"."<a class=\"dis\" href='editClaims.php?claim_id=".$row["claim_id"]. "'>Edit</a>"."</td>\n";
 		}
 		
 		
@@ -221,9 +221,9 @@ echo '</div>';
 	echo '<b>Claims</b>'; echo '&nbsp';echo '&nbsp';echo '&nbsp';
 
 	if($agent_id== $username || "Admin" == $username){
-			echo "<a href='addNominee.php?client_id=".$c_id. "'>Add Claim</a>";
+			echo "<a href='addClaims.php?client_id=".$c_id. "'>Add Claim</a>";
 		}else {
-			echo "<a class=\"dis\" href='addNominee.php?client_id=".$c_id. "'>Add Claim</a>";
+			echo "<a class=\"dis\" href='addClaims.php?client_id=".$c_id. "'>Add Claim</a>";
 		}
 	
 	
